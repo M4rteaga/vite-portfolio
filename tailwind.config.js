@@ -2,12 +2,25 @@ const colors = require("windicss/colors");
 module.exports = {
   purge: [],
   theme: {
+    backdropFilter: {
+      none: "none",
+      blur: "blur(4px)",
+    },
     extend: {
       colors: {
-        primary: "#1E00FF",
+        primary: {
+          solid: "#1E00FF",
+          opacity: "rgba(30, 0, 255, 0.24)",
+        },
         secondary: {
-          green: "#03CEA4",
-          pink: "#FF1B6B",
+          green: {
+            solid: "#03CEA4",
+            opacity: "rgba(3, 206, 164, 0.16)",
+          },
+          pink: {
+            solid: "#FF1B6B",
+            opacity: "rgba(255, 27, 107, 0.16)",
+          },
         },
         base: {
           black: "#020305",
@@ -15,8 +28,14 @@ module.exports = {
           notThatWhite: "#FBFEF9",
         },
       },
+      zIndex: {
+        "-10": "-10",
+      },
     },
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    filter: ["responsive"],
+    backdropFilter: ["responsive"],
+  },
+  plugins: [require("windicss/plugin/filters")],
 };
