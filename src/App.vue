@@ -1,5 +1,5 @@
 <template>
-  <Nav />
+  <NavBar />
   <main class="w-full flex flex-col items-center mt-28 px-10">
     <header class="text-center">
       <div class="relative">
@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import Nav from "./components/nav/Nav.vue";
+import NavBar from "./components/nav/NavBar.vue";
 import Title from "./components/landing/Title.vue";
 import BodyText from "./components/landing/BodyText.vue";
 import ProfilePicture from "./components/landing/ProfilePicture.vue";
