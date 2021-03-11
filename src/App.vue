@@ -8,13 +8,21 @@
         <CirclePinkToBlue class="w-14 h-14 -top-12 -left-5" />
       </div>
       <BodyText
-        text="Hi, we're software developers and this is our portfolio. feel free to take a
+        text="Hi, we're software developers and this is our portfolio. Feel free to take a
     look, download our CV and contact us."
       />
     </header>
     <div class="w-full flex flex-row justify-around mt-14">
-      <ProfilePicture />
-      <ProfilePicture />
+      <ProfilePicture
+        imgName="mateo.jpg"
+        altTag="Profile picture"
+        caption="Mateo Arteaga"
+      />
+      <ProfilePicture
+        imgName="andres.jpg"
+        altTag="Profile picture"
+        caption="Andres Velez"
+      />
     </div>
   </main>
 </template>
@@ -24,6 +32,6 @@ import Nav from "./components/nav/Nav.vue";
 import Title from "./components/landing/Title.vue";
 import BodyText from "./components/landing/BodyText.vue";
 import ProfilePicture from "./components/landing/ProfilePicture.vue";
-import CircleBlueToGreen from "./components/landing/decorations/CircleBlueToGreen.vue";
-import CirclePinkToBlue from "./components/landing/decorations/CirclePinkToBlue.vue";
+import CircleBlueToGreen from "./components/CircleBlueToGreen.vue";
+import CirclePinkToBlue from "./components/CirclePinkToBlue.vue";
 </script>

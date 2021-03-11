@@ -7,11 +7,21 @@
         width: 6.25rem;
         height: 6.25rem;
       "
-      src="../../assets/mateo/mateo.jpg"
-      alt="Mateo Arteaga profile picture"
+      v-bind:src="'../../assets/' + imgName"
+      v-bind:alt="altTag"
     />
     <figcaption class="text-center font-light mt-4 text-xs">
-      Mateo Arteaga
+      {{ caption }}
     </figcaption>
   </figure>
 </template>
+
+<script setup>
+import { defineProps } from "vue";
+
+defineProps({
+  imgName: String,
+  altTag: String,
+  caption: String,
+});
+</script>
