@@ -34,6 +34,10 @@ module.exports = {
     },
   },
   variants: {
+    extend: {
+      borderWidth: ["hover", "focus"],
+      gradientColorStops: ["active", "group-hover"],
+    },
     filter: ["responsive"],
     backdropFilter: ["responsive"],
   },
