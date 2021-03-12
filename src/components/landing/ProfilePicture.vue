@@ -1,15 +1,20 @@
 <template>
-  <figure class="group flex flex-col justify-center items-center w-28 p-0">
-    <router-link :to="`/${route}`" v-bind:class="style">
+  <figure
+    class="group flex flex-col justify-center items-center w-28 lg:w-36 p-0"
+  >
+    <router-link
+      :to="`/${route}`"
+      class="block p-0.5 rounded-full hover:bg-gradient-to-tr from-primary-medium to-secondary-green-medium"
+    >
       <img
-        class="w-26 h-26 rounded-full object-cover"
+        class="w-26 h-26 rounded-full object-cover lg:w-32 lg:h-32"
         v-bind:src="'../../assets/' + imgName"
         v-bind:alt="altTag"
       />
     </router-link>
     <router-link :to="`/${route}`">
       <figcaption
-        class="text-center font-light mt-4 text-xs group-hover:font-normal"
+        class="duration-300 ease-in-out transform text-center font-light mt-4 text-xs group-hover:font-normal lg:text-sm"
       >
         {{ caption }}
       </figcaption>
@@ -26,11 +31,4 @@ defineProps({
   caption: String,
   route: String,
 });
-
-const transition = "transition duration-500 ease-in-out";
-
-const gradientColor =
-  "bg-gradient-to-tr from-primary-medium to-secondary-green-medium";
-
-const style = `${transition} block p-0.5 rounded-full hover:${gradientColor}`;
 </script>
