@@ -30,10 +30,10 @@
 </template>
 
 <script setup>
-import NavBar from "./components/nav/NavBar.vue";
-import Title from "./components/landing/Title.vue";
-import BodyText from "./components/landing/BodyText.vue";
-import ProfilePicture from "./components/landing/ProfilePicture.vue";
-import CircleBlueToGreen from "./components/CircleBlueToGreen.vue";
-import CirclePinkToBlue from "./components/CirclePinkToBlue.vue";
+import NavBar from "../components/nav/NavBar.vue";
+import Title from "../components/landing/Title.vue";
+import BodyText from "../components/landing/BodyText.vue";
+import ProfilePicture from "../components/landing/ProfilePicture.vue";
+import CircleBlueToGreen from "../components/CircleBlueToGreen.vue";
+import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
 </script>

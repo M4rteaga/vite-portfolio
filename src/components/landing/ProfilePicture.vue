@@ -1,12 +1,12 @@
 <template>
   <figure class="flex flex-col justify-center items-center w-28 p-0">
-    <div class="">
-      <img
-        class="w-26 h-26 rounded-full object-cover hover:(bg-clip-border border-3) hover:bg-gradient-to-r hover:from-secondary-pink-solid hover:to-secondary-green-solid"
-        v-bind:src="'../../assets/' + imgName"
-        v-bind:alt="altTag"
-      />
-    </div>
+    <!-- <router-link to="/mateo"> -->
+    <img
+      class="w-26 h-26 rounded-full object-cover hover:(bg-clip-border border-3) hover:bg-gradient-to-r hover:from-secondary-pink-solid hover:to-secondary-green-solid"
+      v-bind:src="'../../assets/' + imgName"
+      v-bind:alt="altTag"
+    />
+    <!-- </router-link> -->
     <figcaption class="text-center font-light mt-4 text-xs hover:font-normal">
       {{ caption }}
     </figcaption>
