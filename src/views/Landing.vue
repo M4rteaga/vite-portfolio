@@ -13,18 +13,24 @@
     look, download our CV and contact us."
         />
       </header>
-      <div class="w-full flex flex-row justify-around mt-14">
-        <ProfilePicture
-          imgName="mateo.jpg"
-          altTag="Profile picture"
-          caption="Mateo Arteaga"
-        />
-        <ProfilePicture
-          imgName="andres.jpg"
-          altTag="Profile picture"
-          caption="Andres Velez"
-        />
-      </div>
+      <ul class="w-full flex flex-row justify-around mt-14">
+        <li>
+          <ProfilePicture
+            imgName="mateo.jpg"
+            altTag="Profile picture"
+            caption="Mateo Arteaga"
+            route="mateo"
+          />
+        </li>
+        <li>
+          <ProfilePicture
+            imgName="andres.jpg"
+            altTag="Profile picture"
+            caption="Andres Velez"
+            route="andres"
+          />
+        </li>
+      </ul>
     </div>
   </main>
 </template>

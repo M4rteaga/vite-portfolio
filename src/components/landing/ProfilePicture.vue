@@ -1,26 +1,36 @@
 <template>
-  <figure class="flex flex-col justify-center items-center w-28 p-0">
-    <router-link to="/mateo">
+  <figure class="group flex flex-col justify-center items-center w-28 p-0">
+    <router-link :to="`/${route}`" v-bind:class="style">
       <img
-        class="w-26 h-26 rounded-full object-cover hover:(bg-clip-border border-3) hover:bg-gradient-to-r hover:from-secondary-pink-solid hover:to-secondary-green-solid"
+        class="w-26 h-26 rounded-full object-cover"
         v-bind:src="'../../assets/' + imgName"
         v-bind:alt="altTag"
       />
     </router-link>
-    <figcaption class="text-center font-light mt-4 text-xs hover:font-normal">
-      {{ caption }}
-    </figcaption>
+    <router-link :to="`/${route}`">
+      <figcaption
+        class="text-center font-light mt-4 text-xs group-hover:font-normal"
+      >
+        {{ caption }}
+      </figcaption>
+    </router-link>
   </figure>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, defineComponent } from "vue";
 
 defineProps({
   imgName: String,
   altTag: String,
   caption: String,
+  route: String,
 });
-</script>
 
-//"#background: linear-gradient(47.58deg, rgba(3, 206, 164, 0.32) 0%, rgba(238, 39, 111, 0.08) 102.1%);"
+const transition = "transition duration-500 ease-in-out";
+
+const gradientColor =
+  "bg-gradient-to-tr from-primary-medium to-secondary-green-medium";
+
+const style = `${transition} block p-0.5 rounded-full hover:${gradientColor}`;
+</script>
