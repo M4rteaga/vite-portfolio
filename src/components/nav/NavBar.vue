@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full" style="background-color: black">
+  <nav class="w-full bg-base-black">
     <div
       class="flex flex-row justify-between mx-4 content-center items-center h-12"
     >
