@@ -1,5 +1,5 @@
 <template>
-  <NavBar />
+  <NavBar HamburgerMenu="hamburguerMenu" />
   <h1>hello from Andres</h1>
 </template>
 
