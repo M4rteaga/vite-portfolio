@@ -6,11 +6,13 @@
       :to="`/${route}`"
       class="block p-0.5 rounded-full hover:bg-gradient-to-tr from-primary-medium to-secondary-green-medium"
     >
-      <img
-        class="w-26 h-26 rounded-full object-cover lg:w-32 lg:h-32"
-        v-bind:src="'../../assets/' + imgName"
-        v-bind:alt="altTag"
-      />
+      <div class="block p-0.5 rounded-full bg-white">
+        <img
+          class="w-26 h-26 rounded-full object-cover lg:w-32 lg:h-32"
+          v-bind:src="'../../assets/' + imgName"
+          v-bind:alt="altTag"
+        />
+      </div>
     </router-link>
     <router-link :to="`/${route}`">
       <figcaption

@@ -30,6 +30,7 @@ module.exports = {
           black: "#020305",
           white: "#FFFFFF",
           notThatWhite: "#FBFEF9",
+          grey: "#F8F8F8",
         },
       },
       zIndex: {

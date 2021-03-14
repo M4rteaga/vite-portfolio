@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import Hamburger from "./Hamburger.vue";
+import Hamburger from "./NavHamburger.vue";
 import router from "../../router.js";
 
 let Menu = router.currentRoute.value.path != "/";
