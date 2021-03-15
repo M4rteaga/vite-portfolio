@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-tr from-glass-whiteBl to-glass-whiteTr backdrop-blur-20 px-10 rounded-2xl w-full my-10 pb-10 shadow-white-lg"
+    class="flex flex-col bg-gradient-to-tr from-glass-whiteBl to-glass-whiteTr backdrop-blur-20 px-10 rounded-2xl w-full pb-10"
   >
     <div class="flex flex-col">
       <ul>
@@ -34,7 +34,6 @@
 import { defineProps } from "vue";
 
 defineProps({
-  skill: String,
   skills: Array,
 });
 </script>

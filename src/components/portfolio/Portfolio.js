@@ -6,6 +6,9 @@ import PortfolioButton from "./PortfolioButton.vue";
 import PortfolioGalleryFotos from "./PortfolioGalleryFotos.vue";
 
 import SkillsTable from "./Skill/SkillsTable.vue";
+import SkillsType from "./Skill/SkillType.vue";
+
+import ContactForm from "./contactForm/ContactForm.vue";
 
 export {
   PortfolioBodytext,
@@ -15,4 +18,6 @@ export {
   PortfolioGalleryFotos,
   PortfolioTitle,
   SkillsTable,
+  SkillsType,
+  ContactForm,
 };

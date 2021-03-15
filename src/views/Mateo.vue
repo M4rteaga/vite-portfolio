@@ -12,7 +12,10 @@
             I am passionate about learning new technologies, listening to music, watching movies, hanging out and pets."
           />
         </div>
-        <PortfolioButton class="self-center" content="Resume" />
+        <PortfolioButton
+          class="self-center bg-secondary-green-solid"
+          content="Resume"
+        />
       </div>
     </div>
     <!-- Gallery -->
@@ -36,15 +39,29 @@
         </div>
       </div>
     </div>
-    <div class="relative w-full flex bg-primary-solid justify-center px-10">
+    <div
+      class="relative w-full flex flex-col bg-indigo-600 justify-center items-cente px-10"
+    >
       <!-- Skills set -->
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col justify-center my-8 items-center">
         <PortfolioMainText text="Skills" class="text-white" />
-        <SkillsTable :skills="skills" />
+        <div class="w-full flex flex-wrap space-y-8">
+          <div class="w-full">
+            <SkillsType skillType="Languages" />
+            <SkillsTable :skills="languages" />
+          </div>
+          <div class="w-full">
+            <SkillsType skillType="Frameworks" />
+            <SkillsTable :skills="frameworks" />
+          </div>
+        </div>
       </div>
     </div>
-    <div>
+    <div
+      class="w-full flex flex-col items-center justify-center mb-20 mt-10 px-10"
+    >
       <!-- Contact form -->
+      <ContactForm />
     </div>
   </main>
 </template>
@@ -61,9 +78,11 @@ import {
   PortfolioGalleryFotos,
   PortfolioTitle,
   SkillsTable,
+  SkillsType,
+  ContactForm,
 } from "../components/portfolio/Portfolio.js";
 
-const skills = [
+const languages = [
   {
     name: "HTML",
     level: "w-3/4",
@@ -75,6 +94,33 @@ const skills = [
   {
     name: "JavaScript",
     level: "w-2/3",
+  },
+  {
+    name: "Typescript",
+    level: "w-1/5",
+  },
+  {
+    name: "Go",
+    level: "w-1/5",
+  },
+];
+
+const frameworks = [
+  {
+    name: "Tailwindcss",
+    level: "w-3/4",
+  },
+  {
+    name: "Vue",
+    level: "w-2/5",
+  },
+  {
+    name: "React",
+    level: "w-1/6",
+  },
+  {
+    name: "Express",
+    level: "w-2/4",
   },
 ];
 </script>

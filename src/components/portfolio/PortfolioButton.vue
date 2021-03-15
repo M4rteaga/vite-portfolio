@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-secondary-green-solid mt-8 text-white px-6 py-2 rounded-full flex flex-row text-center"
+    class="mt-8 text-white px-6 py-2 rounded-full flex flex-row text-center justify-center text-sm"
   >
     {{ content }}
     <svg
