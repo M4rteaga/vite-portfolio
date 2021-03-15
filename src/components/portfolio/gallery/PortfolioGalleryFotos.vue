@@ -2,11 +2,13 @@
   <figure class="flex justify-center">
     <div class="relative flex">
       <img
-        class="rounded-2xl w-62 h-52 object-cover z-40 shadow-lg"
+        class="rounded-2xl w-68 h-52 object-cover z-40 shadow-lg"
         v-bind:src="'../../assets/' + imgName"
         v-bind:alt="altTag"
       />
-      <div class="absolute rounded-3xl w-52 bg-secondary-pink-solid z-0"></div>
+      <div
+        class="absolute rounded-3xl w-68 h-52 bg-secondary-pink-solid z-0 -bottom-2.5 -left-2.5"
+      ></div>
     </div>
   </figure>
 </template>

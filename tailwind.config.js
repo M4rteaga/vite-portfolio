@@ -60,8 +60,5 @@ module.exports = {
     filter: ["responsive"],
     backdropFilter: ["responsive"],
   },
-  plugins: [
-    require("windicss/plugin/filters"),
-    require("windicss/plugin/forms"),
-  ],
+  plugins: [require("windicss/plugin/filters")],
 };

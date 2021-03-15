@@ -32,9 +32,9 @@
           class="w-18 h-18 backdrop-blur transform -translate-x-1/2 translate-y-1/2"
         />
       </div>
-      <div class="my-8 flex flex-col items-center justify-center">
+      <div class="my-8 flex flex-col items-center justify-center w-full">
         <PortfolioMainText text="Gallery" />
-        <div>
+        <div class="mt-4 mb-8">
           <PortfolioGalleryFotos imgName="Poco.jpg" />
         </div>
       </div>
