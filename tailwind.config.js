@@ -30,7 +30,7 @@ module.exports = {
         base: {
           black: "#020305",
           white: "#FFFFFF",
-          notThatWhite: "#FBFEF9",
+          notThatWhite: "#FaFaFa",
           grey: "#F8F8F8",
         },
         glass: {

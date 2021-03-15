@@ -10,7 +10,7 @@
             <div class="w-full h-2 bg-base-grey rounded-full">
               <div
                 :class="
-                  'bg-secondary-green-solid h-2 rounded-full' +
+                  'bg-gradient-to-tr from-secondary-green-medium to-secondary-green-solid h-2 rounded-full' +
                   ' ' +
                   skill.level
                 "

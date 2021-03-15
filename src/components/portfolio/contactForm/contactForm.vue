@@ -1,5 +1,7 @@
 <template>
-  <div class="w-full flex flex-col rounded-2xl px-4 shadow-lg">
+  <div
+    class="relative w-full flex flex-col rounded-2xl px-4 shadow-lg z-50 bg-base-white border-1 border-gray-100"
+  >
     <PortfolioMainText text="Reach out ✍️ !!" class="mt-6 mb-0" />
     <form action="" class="w-full mb-8 flex flex-col">
       <ul>

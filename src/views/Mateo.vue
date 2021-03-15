@@ -61,7 +61,15 @@
       class="w-full flex flex-col items-center justify-center mb-20 mt-10 px-10"
     >
       <!-- Contact form -->
-      <ContactForm />
+      <div class="relative flex flex-col w-full">
+        <ContactForm class="transform mt-10" />
+        <CircleBlueToGreen
+          class="duration-300 ease-in-out transform w-20 h-20 top-2 -left-5 z-10 backdrop-blur lg:w-32 lg:h-32 lg:-top-10 lg:left-10"
+        />
+        <CirclePinkToBlue
+          class="duration-300 ease-in-out transform w-14 h-14 -top-5 -left-9 z-0 lg:w-24 lg:h-24 lg:-top-20 lg:left-1"
+        />
+      </div>
     </div>
   </main>
 </template>
@@ -70,6 +78,8 @@
 import NavBar from "../components/nav/NavBar.vue";
 import CircleBlueToGreen from "../components/CircleBlueToGreen.vue";
 import CircleGreenToPink from "../components/CircleGreenToPink.vue";
+import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
+
 import {
   PortfolioBodytext,
   PortfolioFotos,
