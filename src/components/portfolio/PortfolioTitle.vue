@@ -1,6 +1,6 @@
 <template>
   <h1
-    class="duration-300 ease-in-out transform font-bold mb-6 text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+    class="duration-300 ease-in-out transform font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
   >
     {{ text }}
   </h1>

@@ -2,7 +2,7 @@
   <button
     class="bg-secondary-green-solid mt-8 text-white px-6 py-2 rounded-full flex flex-row text-center"
   >
-    Resume
+    {{ content }}
     <svg
       class="w-5 h-5 ml-3 self-center"
       xmlns="http://www.w3.org/2000/svg"
@@ -20,4 +20,10 @@
   </button>
 </template>
 
-<script setup></script>
+<script setup>
+import { defineProps } from "vue";
+
+defineProps({
+  content: String,
+});
+</script>

@@ -36,6 +36,9 @@ module.exports = {
       zIndex: {
         "-10": "-10",
       },
+      scale: {
+        min: "-1",
+      },
     },
   },
   variants: {
