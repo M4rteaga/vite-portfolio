@@ -6,6 +6,7 @@ module.exports = {
     backdropFilter: {
       none: "none",
       blur: "blur(4px)",
+      "blur-20": "blur(20px)",
     },
     extend: {
       colors: {
@@ -32,12 +33,20 @@ module.exports = {
           notThatWhite: "#FBFEF9",
           grey: "#F8F8F8",
         },
+        glass: {
+          whiteBl: "rgba(255, 255, 255, 0.1)",
+          whiteTr: "rgba(255, 255, 255, 0.5)",
+        },
       },
       zIndex: {
         "-10": "-10",
       },
       scale: {
         min: "-1",
+      },
+      boxShadow: {
+        "white-lg":
+          "0 10px 15px -3px rgba(255, 255, 255, 0.1), 0 4px 6px -2px rgba(255, 255, 255, 0.05)",
       },
     },
   },
