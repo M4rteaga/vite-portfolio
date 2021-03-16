@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative w-full flex flex-col rounded-2xl px-4 shadow-lg z-50 bg-base-white border-1 border-gray-100"
+    class="relative w-full flex flex-col rounded-2xl px-4 shadow-lg z-50 bg-base-white"
   >
     <PortfolioMainText text="Reach out ✍️ !!" class="mt-6 mb-0" />
     <form action="" class="w-full mb-8 flex flex-col">
@@ -60,6 +60,7 @@
       <PortfolioButton
         class="self-center bg-secondary-pink-solid w-34"
         content="Send"
+        arrowDirection="transform -rotate-90"
       />
     </form>
   </div>

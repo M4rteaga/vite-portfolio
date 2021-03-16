@@ -4,7 +4,7 @@
   >
     {{ content }}
     <svg
-      class="w-5 h-5 ml-3 self-center"
+      :class="'w-5 h-5 ml-3 self-center' + ' ' + arrowDirection"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
@@ -25,5 +25,6 @@ import { defineProps } from "vue";
 
 defineProps({
   content: String,
+  arrowDirection: String,
 });
 </script>
