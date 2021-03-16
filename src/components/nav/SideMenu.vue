@@ -1,0 +1,98 @@
+<template>
+  <nav
+    class="flex w-full items-center content-center justify-between px-4 z-10 bg-base-black h-12 sm:px-8 lg:px-12"
+  >
+    <router-link to="/">
+      <h3 class="font-normal text-white text-base">M&A Portfolio</h3>
+    </router-link>
+    <div class="flex items-center">
+      <button class="mr-2" aria-label="Open Menu" @click="drawer">
+        <svg
+          class="w-6 h-6 text-white"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <transition
+      enter-class="opacity-0"
+      enter-active-class="ease-out transition-medium"
+      enter-to-class="opacity-50"
+      leave-class="opacity-50"
+      leave-active-class="ease-out transition-medium"
+      leave-to-class="opacity-0"
+    >
+      <div
+        @keydown.esc="isOpen = false"
+        v-show="isOpen"
+        class="z-100 fixed inset-0 transition-opacity"
+      >
+        <div
+          @click="isOpen = false"
+          class="absolute -inset-0 bg-black opacity-40"
+          tabindex="0"
+        ></div>
+      </div>
+    </transition>
+    <aside
+      class="transform top-0 right-0 w-1/2 bg-base-white fixed h-1/4 overflow-auto ease-in-out transition-all duration-300 z-200 rounded-l-2xl rounded-b-2xl"
+      :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
+    >
+      <div class="mt-6 ml-6 space-y-4 text-base text-base-black">
+        <a href="#aboutMe">
+          <h3 class="">About me</h3>
+        </a>
+        <a href="#gallery">
+          <h3 class="">Gallery</h3>
+        </a>
+        <a href="#skill">
+          <h3 class="">Skill</h3>
+        </a>
+        <a href="#contact">
+          <h3 class="">Contact</h3>
+        </a>
+      </div>
+    </aside>
+  </nav>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      isOpen: false,
+    };
+  },
+  methods: {
+    drawer() {
+      this.isOpen = !this.isOpen;
+    },
+  },
+  watch: {
+    isOpen: {
+      immediate: true,
+      handler(isOpen) {
+        if (process.client) {
+          if (isOpen) document.body.style.setProperty("overflow", "hidden");
+          else document.body.style.removeProperty("overflow");
+        }
+      },
+    },
+  },
+  mounted() {
+    document.addEventListener("keydown", (e) => {
+      if (e.keyCode == 27 && this.isOpen) this.isOpen = false;
+    });
+  },
+};
+</script>

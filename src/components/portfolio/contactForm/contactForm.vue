@@ -67,10 +67,6 @@
 </template>
 
 <script setup>
-import { defineComponent } from "vue";
-
 import PortfolioButton from "../PortfolioButton.vue";
 import PortfolioMainText from "../PortfolioMainText.vue";
-
-defineComponent({});
 </script>

@@ -5,7 +5,6 @@
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
-    v-on:click="Hamburger"
   >
     <path
       stroke-linecap="round"
@@ -16,3 +15,4 @@
   </svg>
 </template>
 
+<script></script>
