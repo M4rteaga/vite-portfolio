@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-     <UpButton class="justify-self-end self-end mr-6" />
+    <UpButton class="justify-self-end self-end mr-6" />
 
     <!-- Gallery -->
 
@@ -34,10 +34,12 @@
           class="w-18 h-18 backdrop-blur transform -translate-x-1/2 translate-y-1/2"
         />
       </div>
-      <div class="my-8 flex flex-col items-center justify-center">
+      <div class="my-8 flex flex-col items-center justify-center w-full">
         <PortfolioMainText text="Gallery" />
-        <div>
-          <PortfolioGalleryFotos imgName="Poco.jpg" />
+        <div class="mt-4 mb-8 flex relative flex-row w-full justify-around">
+          <PortfolioGalleryFotos imgName="img1.jpg" />
+          <PortfolioGalleryFotos imgName="img2.jpg" />
+          <PortfolioGalleryFotos imgName="img3.jpg" />
         </div>
       </div>
     </div>
