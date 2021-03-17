@@ -1,8 +1,8 @@
 <template>
-  <NavBar HamburgerMenu="hamburguerMenu" />
+  <SideMenu HamburgerMenu="hamburguerMenu" />
   <h1>hello from Andres</h1>
 </template>
 
 <script setup>
-import NavBar from "../components/nav/NavBar.vue";
+import SideMenu from "../components/nav/SideMenu.vue";
 </script>

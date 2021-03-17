@@ -15,7 +15,8 @@
           <h3 class="px-4">Skill</h3>
           <h3 class="px-4">Contact</h3>
         </div>
-        <Hamburger class="md:hidden" />
+        <!-- <Hamburger class="md:hidden" /> -->
+        <SideMenu class="md:hidden" />
       </div>
     </div>
   </nav>
@@ -24,6 +25,7 @@
 <script setup>
 import Hamburger from "./NavHamburger.vue";
 import router from "../../router.js";
+import SideMenu from "./SideMenu.vue";
 
 let Menu = router.currentRoute.value.path != "/";
 </script>

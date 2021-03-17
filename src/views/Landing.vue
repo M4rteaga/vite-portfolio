@@ -8,13 +8,13 @@
         class="duration-300 ease-in-out transform sm:w-3/4 md:w-3/5 lg:w-1/2"
       >
         <header class="text-center">
-          <div class="relative">
-            <Title class="" />
+          <div class="relative flex flex-col">
+            <Title class="z-50" />
             <CircleBlueToGreen
-              class="duration-300 ease-in-out transform w-20 h-20 -top-7 lg:w-32 lg:h-32 lg:-top-10 lg:left-10"
+              class="duration-300 ease-in-out transform w-20 h-20 -top-7 z-20 backdrop-blur lg:w-32 lg:h-32 lg:-top-10 lg:left-10"
             />
             <CirclePinkToBlue
-              class="duration-300 ease-in-out transform w-14 h-14 -top-12 -left-5 lg:w-24 lg:h-24 lg:-top-20 lg:left-1"
+              class="duration-300 ease-in-out transform w-14 h-14 -top-12 -left-5 z-0 lg:w-24 lg:h-24 lg:-top-20 lg:left-1"
             />
           </div>
           <BodyText

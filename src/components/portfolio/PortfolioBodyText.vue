@@ -1,6 +1,6 @@
 <template>
   <p
-    class="duration-300 ease-in-out transform font-normal mt-4 text-sm px-1.5 md:text-lg lg:text-xl"
+    class="duration-300 ease-in-out transform font-normal mt-4 text-sm text-base-lightBlack px-1.5 md:text-lg lg:text-xl"
   >
     {{ text }}
   </p>
