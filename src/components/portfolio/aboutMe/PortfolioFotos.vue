@@ -2,12 +2,12 @@
   <figure class="flex justify-center">
     <div class="relative flex">
       <img
-        class="rounded-3xl w-52 h-52 object-cover z-40 shadow-lg md:w-64 md:h-64"
+        class="duration-300 ease-in-out transform rounded-3xl w-52 h-52 object-cover z-40 shadow-lg md:w-64 md:h-64"
         v-bind:src="'../../assets/' + imgName"
         v-bind:alt="altTag"
       />
       <div
-        class="absolute rounded-3xl w-52 h-50 bg-indigo-600 z-0 top-0 left-0 md:w-64 md:h-64 -top-3 -left-3"
+        class="duration-300 ease-in-out transform absolute rounded-3xl w-52 h-50 bg-indigo-600 z-0 top-0 left-0 md:w-64 md:h-64 -top-3 -left-3"
       ></div>
     </div>
   </figure>

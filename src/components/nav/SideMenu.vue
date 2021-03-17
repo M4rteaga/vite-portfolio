@@ -85,18 +85,43 @@
       <div class="mt-6 mx-6 text-base text-base-black flex flex-col space-y-4">
         <a
           href="#aboutMe"
-          class="px-2 group rounded-lg transition ease-in-out duration-700 hover:bg-base-black"
+          class="px-2 group rounded-lg transition ease-in-out duration-300 hover:bg-base-black"
         >
-          <h3 class="text-base-lightBlack group-hover:text-white">About me</h3>
+          <h3
+            class="text-base-lightBlack transition ease-in duration-300 group-hover:text-white"
+          >
+            About me
+          </h3>
         </a>
-        <a href="#gallery" class="px-2 group rounded-lg hover:bg-base-black">
-          <h3 class="text-base-lightBlack group-hover:text-white">Gallery</h3>
+        <a
+          href="#gallery"
+          class="px-2 group rounded-lg transition ease-in duration-300 hover:bg-base-black"
+        >
+          <h3
+            class="text-base-lightBlack transition ease-in duration-300 group-hover:text-white"
+          >
+            Gallery
+          </h3>
         </a>
-        <a href="#skill" class="px-2 group rounded-lg hover:bg-base-black">
-          <h3 class="text-base-lightBlack group-hover:text-white">Skill</h3>
+        <a
+          href="#skill"
+          class="px-2 group rounded-lg transition ease-in duration-300 hover:bg-base-black"
+        >
+          <h3
+            class="text-base-lightBlack transition ease-in duration-300 group-hover:text-white"
+          >
+            Skill
+          </h3>
         </a>
-        <a href="#contact" class="px-2 group rounded-lg hover:bg-base-black">
-          <h3 class="text-base-lightBlack group-hover:text-white">Contact</h3>
+        <a
+          href="#contact"
+          class="px-2 group rounded-lg transition ease-in-out duration-400 hover:bg-base-black"
+        >
+          <h3
+            class="text-base-lightBlack transition ease-in-out duration-400 group-hover:text-white"
+          >
+            Contact
+          </h3>
         </a>
       </div>
     </aside>
@@ -128,7 +153,7 @@ export default {
   },
   mounted() {
     document.addEventListener("keydown", (e) => {
-      if (e.keyCode == 27 && this.isOpen) this.isOpen = false;
+      if (this.isOpen) this.isOpen = false;
     });
   },
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-full">
-    <SideMenu />
+    <SideMenu id="navBar" />
     <main class="flex flex-col justify-center items-center z-0">
       <!-- About me -->
       <div
@@ -29,6 +29,7 @@
           </div>
         </div>
       </div>
+      <UpButton class="justify-self-end self-end mr-6" />
       <!-- Gallery -->
       <div
         id="gallery"
@@ -48,7 +49,9 @@
         </div>
         <div class="my-8 flex flex-col items-center justify-center w-full">
           <PortfolioMainText text="Gallery" />
-          <div class="mt-4 mb-8">
+          <div class="mt-4 mb-8 flex relative flex-row w-full justify-around">
+            <PortfolioGalleryFotos imgName="Poco.jpg" class="hidden lg:block" />
+            <PortfolioGalleryFotos imgName="Poco.jpg" class="hidden lg:block" />
             <PortfolioGalleryFotos imgName="Poco.jpg" />
           </div>
         </div>
@@ -98,6 +101,7 @@ import CircleBlueToGreen from "../components/CircleBlueToGreen.vue";
 import CircleGreenToPink from "../components/CircleGreenToPink.vue";
 import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
 import SideMenu from "../components/nav/SideMenu.vue";
+import UpButton from "../components/UpButton.vue";
 
 import {
   PortfolioBodytext,
