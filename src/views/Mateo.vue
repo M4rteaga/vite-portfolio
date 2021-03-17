@@ -53,8 +53,12 @@
             <PortfolioGalleryFotos
               imgName="Portfolio.webp"
               class="hidden lg:block"
+              backColor="bg-primary-solid"
             />
-            <PortfolioGalleryFotos imgName="Hidia.webp" />
+            <PortfolioGalleryFotos
+              imgName="Hidia.webp"
+              backColor="bg-secondary-green-solid"
+            />
             <PortfolioGalleryFotos
               imgName="GraceHooper.webp"
               class="hidden lg:block"

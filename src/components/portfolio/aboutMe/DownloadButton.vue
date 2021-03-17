@@ -2,7 +2,7 @@
   <a
     href="../../../public/assets/C.V MateoArteaga.pdf"
     download
-    class="mt-8 group text-white rounded-full text-center justify-center text-sm focus:border-none hover:border-none focus:outline-none hover:outline-none border-none"
+    class="mt-8 group text-white rounded-full text-center justify-center text-sm focus:border-none hover:border-none focus:outline-none hover:outline-none border-none focus:ring-0"
   >
     <button class="px-6 py-2 flex flex-row">
       {{ content }}

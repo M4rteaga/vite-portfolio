@@ -7,7 +7,11 @@
         v-bind:alt="altTag"
       />
       <div
-        class="absolute rounded-3xl w-68 h-52 bg-secondary-pink-solid z-0 -bottom-2.5 -left-2.5"
+        :class="
+          'absolute rounded-3xl w-68 h-52 bg-secondary-pink-solid z-0 -bottom-2.5 -left-2.5 ' +
+          '' +
+          backColor
+        "
       ></div>
     </div>
   </figure>
@@ -19,5 +23,6 @@ import { defineProps } from "vue";
 defineProps({
   imgName: String,
   altTag: String,
+  backColor: String,
 });
 </script>
