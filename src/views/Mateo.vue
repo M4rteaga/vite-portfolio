@@ -106,18 +106,17 @@ import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
 import SideMenu from "../components/nav/SideMenu.vue";
 import UpButton from "../components/UpButton.vue";
 import Social from "../components/portfolio/contactForm/Social.vue";
+import PortfolioBodytext from "../components/portfolio/PortfolioBodyText.vue";
+import PortfolioFotos from "../components/portfolio/aboutMe/PortfolioFotos.vue";
+import PortfolioMainText from "../components/portfolio/PortfolioMainText.vue";
+import PortfolioTitle from "../components/portfolio/aboutMe/PortfolioTitle.vue";
+import PortfolioButton from "../components/portfolio/PortfolioButton.vue";
+import PortfolioGalleryFotos from "../components/portfolio/gallery/PortfolioGalleryFotos.vue";
 
-import {
-  PortfolioBodytext,
-  PortfolioFotos,
-  PortfolioMainText,
-  PortfolioButton,
-  PortfolioGalleryFotos,
-  PortfolioTitle,
-  SkillsTable,
-  SkillsType,
-  ContactForm,
-} from "../components/portfolio/Portfolio.js";
+import SkillsTable from "../components/portfolio/Skill/SkillsTable.vue";
+import SkillsType from "../components/portfolio/Skill/SkillType.vue";
+
+import ContactForm from "../components/portfolio/contactForm/ContactForm.vue";
 
 const languages = [
   {
