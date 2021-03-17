@@ -67,6 +67,6 @@
 </template>
 
 <script setup>
-import PortfolioButton from "../PortfolioButton.vue";
-import PortfolioMainText from "../PortfolioMainText.vue";
+import PortfolioButton from "./PortfolioButton.vue";
+import PortfolioMainText from "./PortfolioMainText.vue";
 </script>

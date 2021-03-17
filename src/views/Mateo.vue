@@ -100,6 +100,8 @@
 </template>
 
 <script setup>
+import ContactForm from "../components/portfolio/contactForm.vue";
+
 import CircleBlueToGreen from "../components/CircleBlueToGreen.vue";
 import CircleGreenToPink from "../components/CircleGreenToPink.vue";
 import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
@@ -115,8 +117,6 @@ import PortfolioGalleryFotos from "../components/portfolio/gallery/PortfolioGall
 
 import SkillsTable from "../components/portfolio/Skill/SkillsTable.vue";
 import SkillsType from "../components/portfolio/Skill/SkillType.vue";
-
-import ContactForm from "../components/portfolio/contactForm/ContactForm.vue";
 
 const languages = [
   {
