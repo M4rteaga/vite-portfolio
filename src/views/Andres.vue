@@ -2,7 +2,7 @@
   <SideMenu id="navBar" />
   <main class="flex flex-col justify-center items-center">
     <div class="w-full flex flex-col items-center mt-15 px-10 max-w-screen-2xl">
-      <div class="flex flex-col">
+      <div id="aboutMe" class="flex flex-col">
         <PortfolioFotos imgName="andres.jpg" altTag="Profile picture" />
         <div class="w-full flex flex-col items-center mb-20 mt-10">
           <div><PortfolioTitle text="Andrés Vélez Zapata" /></div>
@@ -14,8 +14,14 @@
         </div>
       </div>
     </div>
+     <UpButton class="justify-self-end self-end mr-6" />
 
-    <div class="relative w-full flex bg-base-grey mt-16 justify-center">
+    <!-- Gallery -->
+
+    <div
+      id="gallery"
+      class="relative w-full flex bg-base-grey mt-16 justify-center"
+    >
       <div
         class="absolute flex w-46 h-46 z-20 overflow-hidden transform rotate-180 right-0"
       >
@@ -37,13 +43,14 @@
     </div>
 
     <div
+      id="skill"
       class="relative w-full flex flex-col bg-indigo-600 justify-center items-cente px-10"
     >
       <!-- Skills set -->
       <div class="flex flex-col justify-center my-8 items-center">
-        <PortfolioMainText text="Skills" class="text-white" />
-        <div class="w-full flex flex-wrap space-y-8">
-          <div class="w-full">
+        <PortfolioMainText text="Skills" class="text-base-white" />
+        <div class="w-full flex flex-wrap space-y-8 justify-around items-start">
+          <div class="w-150">
             <SkillsType skillType="Languages" />
             <SkillsTable :skills="languages" />
           </div>
@@ -52,15 +59,16 @@
     </div>
 
     <div
+      id="contact"
       class="w-full flex flex-col items-center justify-center mb-20 mt-10 px-10"
     >
       <PortfolioMainText text="Interests" class="text-black" />
-      <div class="w-full h-90 flex flex-row overflow-x-auto space-x-10">
+      <div class="w-full flex flex-wrap justify-around items-start">
         <div
           class="flex flex-col items-center w-65 h-70 space-y-10 rounded-2xl shadow-lg"
         >
-          <div class="lg:text-xl mt-5"><h2>Game Development</h2></div>
-          <div class="w-30 h-30">
+          <div class="lg:text-2xl mt-5"><h2>Game Development</h2></div>
+          <div class="w-25 h-25">
             <img src="../assets/joystick.svg" alt="" />
           </div>
         </div>
@@ -68,8 +76,8 @@
         <div
           class="flex flex-col items-center w-65 h-70 space-y-10 rounded-2xl shadow-lg"
         >
-          <div class="lg:text-xl mt-5"><h2>Artificial Intelligence</h2></div>
-          <div class="w-30 h-30">
+          <div class="lg:text-2xl mt-5"><h2>Artificial Intelligence</h2></div>
+          <div class="w-25 h-25">
             <img src="../assets/brain.svg" alt="" />
           </div>
         </div>
@@ -77,8 +85,8 @@
         <div
           class="flex flex-col items-center w-65 h-70 space-y-10 rounded-2xl shadow-lg"
         >
-          <div class="lg:text-xl mt-5"><h2>Data Science and Analytics</h2></div>
-          <div class="w-30 h-30">
+          <div class="lg:text-2xl mt-5"><h2>Data Science</h2></div>
+          <div class="w-25 h-25">
             <img src="../assets/hosting-server.svg" alt="" />
           </div>
         </div>
@@ -86,8 +94,8 @@
         <div
           class="flex flex-col items-center w-65 h-70 space-y-10 rounded-2xl shadow-lg"
         >
-          <div class="lg:text-xl mt-5"><h2>UI and UX</h2></div>
-          <div class="w-30 h-30">
+          <div class="lg:text-2xl mt-5"><h2>UI and UX</h2></div>
+          <div class="w-25 h-25">
             <img src="../assets/selected.svg" alt="" />
           </div>
         </div>
@@ -95,8 +103,8 @@
         <div
           class="flex flex-col items-center w-65 h-70 space-y-10 rounded-2xl shadow-lg"
         >
-          <div class="lg:text-xl mt-5"><h2>Project Managment</h2></div>
-          <div class="w-30 h-30">
+          <div class="lg:text-2xl mt-5"><h2>Project Managment</h2></div>
+          <div class="w-25 h-25">
             <img src="../assets/rocket-launch.svg" alt="" />
           </div>
         </div>
