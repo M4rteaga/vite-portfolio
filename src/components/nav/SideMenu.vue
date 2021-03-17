@@ -80,7 +80,7 @@
       </div>
     </transition>
     <aside
-      class="transform top-0 right-0 w-1/2 bg-base-white fixed h-1/4 overflow-auto ease-in-out transition-all duration-300 z-200 rounded-l-2xl rounded-b-2xl"
+      class="transform top-0 right-0 w-1/2 bg-base-white fixed h-1/3 overflow-auto ease-in-out transition-all duration-300 z-200 rounded-l-2xl rounded-b-2xl"
       :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
     >
       <div class="mt-6 mx-6 text-base text-base-black flex flex-col space-y-4">
