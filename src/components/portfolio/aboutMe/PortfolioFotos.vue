@@ -7,7 +7,7 @@
         v-bind:alt="altTag"
       />
       <div
-        class="duration-300 ease-in-out transform absolute rounded-3xl w-52 h-50 bg-indigo-600 z-0 top-0 left-0 md:w-64 md:h-64 -top-3 -left-3"
+        class="duration-300 ease-in-out transform absolute rounded-3xl w-52 h-50 bg-indigo-600 z-0 top-0 left-0 md:w-64 md:h-64 transition ease-in duration-400 transform -translate-x-3 -translate-y-3"
       ></div>
     </div>
   </figure>

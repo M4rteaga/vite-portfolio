@@ -8,8 +8,8 @@
       />
       <div
         :class="
-          'absolute rounded-3xl w-68 h-52 bg-secondary-pink-solid z-0 -bottom-2.5 -left-2.5 ' +
-          '' +
+          'absolute rounded-3xl w-68 h-52 bg-secondary-pink-solid z-0 -bottom-0 -left-0 transition ease-in duration-400 transform -translate-x-2.5 translate-y-2.5 ' +
+          ' ' +
           backColor
         "
       ></div>

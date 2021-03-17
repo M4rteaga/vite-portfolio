@@ -5,7 +5,7 @@
       <!-- About me -->
       <div
         id="aboutMe"
-        class="w-full flex flex-col items-center mt-15 px-10 max-w-screen-2xl"
+        class="w-full flex flex-col items-center mt-15 px-10 max-w-screen-2xl group"
       >
         <div class="flex flex-col">
           <div
