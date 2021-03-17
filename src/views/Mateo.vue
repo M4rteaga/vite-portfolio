@@ -91,6 +91,9 @@
             class="duration-300 ease-in-out transform w-14 h-14 -top-5 -left-9 z-0 lg:w-24 lg:h-24 lg:-top-10 lg:-left-20"
           />
         </div>
+        <div>
+          <Social />
+        </div>
       </div>
     </main>
   </div>
@@ -102,6 +105,7 @@ import CircleGreenToPink from "../components/CircleGreenToPink.vue";
 import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
 import SideMenu from "../components/nav/SideMenu.vue";
 import UpButton from "../components/UpButton.vue";
+import Social from "../components/portfolio/contactForm/Social.vue";
 
 import {
   PortfolioBodytext,
