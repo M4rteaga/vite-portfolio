@@ -1,10 +1,14 @@
 <template>
   <button
-    class="mt-8 text-white px-6 py-2 rounded-full flex flex-row text-center justify-center text-sm"
+    class="group mt-8 text-white px-6 py-2 rounded-full flex flex-row text-center justify-center text-sm"
   >
     {{ content }}
     <svg
-      :class="'w-5 h-5 ml-3 self-center' + ' ' + arrowDirection"
+      :class="
+        'group-hover:motion-safe:animate-pulse w-5 h-5 ml-3 self-center' +
+        ' ' +
+        arrowDirection
+      "
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"

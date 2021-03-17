@@ -7,7 +7,7 @@
         v-bind:alt="altTag"
       />
       <div
-        class="absolute rounded-3xl w-52 h-50 bg-indigo-600 z-0 -top-3 -left-3 md:w-64 md:h-60"
+        class="absolute rounded-3xl w-52 h-50 bg-indigo-600 z-0 top-0 left-0 md:w-64 md:h-64 -top-3 -left-3"
       ></div>
     </div>
   </figure>
@@ -20,4 +20,9 @@ defineProps({
   imgName: String,
   altTag: String,
 });
+
+//
 </script>
+
+//-top-3 -left-3 //transition ease-in duration-700 transform -translate-x-3
+-translate-y-3

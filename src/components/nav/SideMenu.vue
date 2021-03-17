@@ -82,18 +82,21 @@
       class="transform top-0 right-0 w-1/2 bg-base-white fixed h-1/4 overflow-auto ease-in-out transition-all duration-300 z-200 rounded-l-2xl rounded-b-2xl"
       :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
     >
-      <div class="mt-6 ml-6 text-base text-base-black flex flex-col space-y-4">
-        <a href="#aboutMe">
-          <h3 class="">About me</h3>
+      <div class="mt-6 mx-6 text-base text-base-black flex flex-col space-y-4">
+        <a
+          href="#aboutMe"
+          class="px-2 group rounded-lg transition ease-in-out duration-700 hover:bg-base-black"
+        >
+          <h3 class="text-base-lightBlack group-hover:text-white">About me</h3>
         </a>
-        <a href="#gallery">
-          <h3 class="">Gallery</h3>
+        <a href="#gallery" class="px-2 group rounded-lg hover:bg-base-black">
+          <h3 class="text-base-lightBlack group-hover:text-white">Gallery</h3>
         </a>
-        <a href="#skill">
-          <h3 class="">Skill</h3>
+        <a href="#skill" class="px-2 group rounded-lg hover:bg-base-black">
+          <h3 class="text-base-lightBlack group-hover:text-white">Skill</h3>
         </a>
-        <a href="#contact">
-          <h3 class="">Contact</h3>
+        <a href="#contact" class="px-2 group rounded-lg hover:bg-base-black">
+          <h3 class="text-base-lightBlack group-hover:text-white">Contact</h3>
         </a>
       </div>
     </aside>

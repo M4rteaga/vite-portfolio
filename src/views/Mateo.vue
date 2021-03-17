@@ -76,16 +76,16 @@
       </div>
       <div
         id="contact"
-        class="w-full flex flex-col items-center justify-center mb-20 mt-10 px-10"
+        class="w-full flex flex-col items-center justify-center mb-20 mt-10 px-10 lg:mt-15"
       >
         <!-- Contact form -->
-        <div class="relative flex flex-col w-full">
+        <div class="relative flex flex-col w-full sm:w-96">
           <ContactForm class="transform mt-10" />
           <CircleBlueToGreen
-            class="duration-300 ease-in-out transform w-20 h-20 top-2 -left-5 z-10 backdrop-blur lg:w-32 lg:h-32 lg:-top-10 lg:left-10"
+            class="duration-300 ease-in-out transform w-20 h-20 top-2 -left-5 z-10 backdrop-blur lg:w-32 lg:h-32 lg:-top-2 lg:-left-10"
           />
           <CirclePinkToBlue
-            class="duration-300 ease-in-out transform w-14 h-14 -top-5 -left-9 z-0 lg:w-24 lg:h-24 lg:-top-20 lg:left-1"
+            class="duration-300 ease-in-out transform w-14 h-14 -top-5 -left-9 z-0 lg:w-24 lg:h-24 lg:-top-10 lg:-left-20"
           />
         </div>
       </div>
