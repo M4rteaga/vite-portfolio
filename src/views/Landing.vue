@@ -25,7 +25,7 @@
         <ul class="w-full flex flex-row justify-around mt-14 xl:px-24">
           <li>
             <ProfilePicture
-              imgName="mateo.jpg"
+              imgName="mateo.webp"
               altTag="Profile picture"
               caption="Mateo Arteaga"
               route="mateo"

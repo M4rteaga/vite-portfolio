@@ -121,7 +121,7 @@ import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
 import SideMenu from "../components/nav/SideMenu.vue";
 import UpButton from "../components/UpButton.vue";
 import Social from "../components/portfolio/contactForm/Social.vue";
-import PortfolioBodytext from "../components/portfolio/PortfolioBodyText.vue";
+import PortfolioBodytext from "../components/portfolio/aboutMe/PortfolioBodyText.vue";
 import PortfolioFotos from "../components/portfolio/aboutMe/PortfolioFotos.vue";
 import PortfolioMainText from "../components/portfolio/PortfolioMainText.vue";
 import PortfolioTitle from "../components/portfolio/aboutMe/PortfolioTitle.vue";

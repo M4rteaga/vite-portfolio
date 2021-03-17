@@ -11,7 +11,7 @@
           <div
             class="flex flex-col md:flex-row-reverse md:justify-between lg:justify-around"
           >
-            <PortfolioFotos imgName="mateo.jpg" altTag="Profile picture" />
+            <PortfolioFotos imgName="mateo.webp" altTag="Profile picture" />
             <div class="mt-10 md:w-1/2">
               <PortfolioTitle text="Mateo Arteaga" />
               <PortfolioBodytext
@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="flex flex-row w-full justify-center">
-            <PortfolioButton
+            <DownloadButton
               class="self-center bg-secondary-green-solid transition ease-in-out duration-300 hover:bg-secondary-green-dark"
               content="Resume"
             />
@@ -50,9 +50,15 @@
         <div class="my-8 flex flex-col items-center justify-center w-full">
           <PortfolioMainText text="Gallery" />
           <div class="mt-4 mb-8 flex relative flex-row w-full justify-around">
-            <PortfolioGalleryFotos imgName="Poco.jpg" class="hidden lg:block" />
-            <PortfolioGalleryFotos imgName="Poco.jpg" class="hidden lg:block" />
-            <PortfolioGalleryFotos imgName="Poco.jpg" />
+            <PortfolioGalleryFotos
+              imgName="Portfolio.webp"
+              class="hidden lg:block"
+            />
+            <PortfolioGalleryFotos imgName="Hidia.webp" />
+            <PortfolioGalleryFotos
+              imgName="GraceHooper.webp"
+              class="hidden lg:block"
+            />
           </div>
         </div>
       </div>
@@ -108,15 +114,15 @@ import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";
 import SideMenu from "../components/nav/SideMenu.vue";
 import UpButton from "../components/UpButton.vue";
 import Social from "../components/portfolio/contactForm/Social.vue";
-import PortfolioBodytext from "../components/portfolio/PortfolioBodyText.vue";
+import PortfolioBodytext from "../components/portfolio/aboutMe/PortfolioBodyText.vue";
 import PortfolioFotos from "../components/portfolio/aboutMe/PortfolioFotos.vue";
 import PortfolioMainText from "../components/portfolio/PortfolioMainText.vue";
 import PortfolioTitle from "../components/portfolio/aboutMe/PortfolioTitle.vue";
 import PortfolioButton from "../components/portfolio/PortfolioButton.vue";
 import PortfolioGalleryFotos from "../components/portfolio/gallery/PortfolioGalleryFotos.vue";
-
 import SkillsTable from "../components/portfolio/Skill/SkillsTable.vue";
 import SkillsType from "../components/portfolio/Skill/SkillType.vue";
+import DownloadButton from "../components/portfolio/aboutMe/DownloadButton.vue";
 
 const address = {
   linkedin: "https://www.linkedin.com/in/mateo-arteaga-675a381a2/",
