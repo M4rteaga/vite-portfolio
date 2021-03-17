@@ -1,5 +1,5 @@
 <template>
-  <NavBar />
+  <SideMenu />
   <div class="flex flex-col justify-center items-center">
     <main
       class="w-full flex flex-col items-center mt-28 px-10 max-w-screen-2xl"
@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import NavBar from "../components/nav/NavBar.vue";
+import SideMenu from "../components/nav/SideMenu.vue";
 import Title from "../components/landing/LandingTitle.vue";
 import BodyText from "../components/landing/LandingBodyText.vue";
 import ProfilePicture from "../components/landing/LandingProfilePicture.vue";
