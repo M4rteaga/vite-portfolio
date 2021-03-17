@@ -92,7 +92,7 @@
           />
         </div>
         <div>
-          <Social />
+          <Social :Address="address" />
         </div>
       </div>
     </main>
@@ -117,6 +117,12 @@ import PortfolioGalleryFotos from "../components/portfolio/gallery/PortfolioGall
 
 import SkillsTable from "../components/portfolio/Skill/SkillsTable.vue";
 import SkillsType from "../components/portfolio/Skill/SkillType.vue";
+
+const address = {
+  linkedin: "https://www.linkedin.com/in/mateo-arteaga-675a381a2/",
+  dribble: "https://dribbble.com/M4rteaga",
+  github: "https://github.com/M4rteaga/vite-portfolio",
+};
 
 const languages = [
   {

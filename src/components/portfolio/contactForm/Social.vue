@@ -2,7 +2,7 @@
   <div
     class="flex flex-row justify-around rounded-lg w-52 mt-8 items-center p-1.5 shadow-lg border-1 border-base-notThatWhite"
   >
-    <a href="https://www.linkedin.com/in/mateo-arteaga-675a381a2/">
+    <a :href="Address.linkedin">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 34 34"
@@ -18,7 +18,7 @@
         </g>
       </svg>
     </a>
-    <a href="https://dribbble.com/M4rteaga">
+    <a :href="Address.dribble">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -32,7 +32,7 @@
         />
       </svg>
     </a>
-    <a href="https://github.com/m4rteaga">
+    <a :href="Address.github">
       <svg class="w-6 h-6" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
         <path
           fill-rule="evenodd"
@@ -42,3 +42,11 @@
     </a>
   </div>
 </template>
+
+<script setup>
+import { defineProps, ref } from "vue";
+
+defineProps({
+  Address: Object,
+});
+</script>
