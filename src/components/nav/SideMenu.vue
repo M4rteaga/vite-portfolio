@@ -3,10 +3,44 @@
     class="flex w-full items-center content-center justify-between px-4 z-10 bg-base-black h-12 sm:px-8 lg:px-12"
   >
     <router-link to="/">
-      <h3 class="font-normal text-white text-base">M&A Portfolio</h3>
+      <h3
+        class="font-normal text-white text-base transition ease-in-out duration-200 hover:text-gray-300"
+      >
+        M&A Portfolio
+      </h3>
     </router-link>
-    <div class="flex items-center">
-      <button class="mr-2" aria-label="Open Menu" @click="drawer">
+    <div class="hidden md:flex flex-row text-white justify-around font-light">
+      <a
+        href="#aboutMe"
+        class="transition ease-in-out duration-200 hover:text-gray-300"
+      >
+        <h3 class="px-4">About me</h3>
+      </a>
+      <a
+        href="#gallery"
+        class="transition ease-in-out duration-200 hover:text-gray-300"
+      >
+        <h3 class="px-4">Gallery</h3>
+      </a>
+      <a
+        href="#skill"
+        class="transition ease-in-out duration-200 hover:text-gray-300"
+      >
+        <h3 class="px-4">Skill</h3>
+      </a>
+      <a
+        href="#contact"
+        class="transition ease-in-out duration-200 hover:text-gray-300"
+      >
+        <h3 class="px-4">Contact</h3>
+      </a>
+    </div>
+    <div class="md:hidden flex items-center">
+      <button
+        class="mr-2 rounded-lg focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
+        aria-label="Open Menu"
+        @click="drawer"
+      >
         <svg
           class="w-6 h-6 text-white"
           xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +82,7 @@
       class="transform top-0 right-0 w-1/2 bg-base-white fixed h-1/4 overflow-auto ease-in-out transition-all duration-300 z-200 rounded-l-2xl rounded-b-2xl"
       :class="isOpen ? 'translate-x-0' : 'translate-x-full'"
     >
-      <div class="mt-6 ml-6 space-y-4 text-base text-base-black">
+      <div class="mt-6 ml-6 text-base text-base-black flex flex-col space-y-4">
         <a href="#aboutMe">
           <h3 class="">About me</h3>
         </a>

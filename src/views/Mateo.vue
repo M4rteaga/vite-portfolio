@@ -1,6 +1,5 @@
 <template>
   <div class="relative h-full">
-    <!-- <NavBar class="hidden md:flex" /> -->
     <SideMenu />
     <main class="flex flex-col justify-center items-center z-0">
       <!-- About me -->
@@ -9,18 +8,25 @@
         class="w-full flex flex-col items-center mt-15 px-10 max-w-screen-2xl"
       >
         <div class="flex flex-col">
-          <PortfolioFotos imgName="mateo.jpg" altTag="Profile picture" />
-          <div class="mt-10">
-            <PortfolioTitle text="Mateo Arteaga" />
-            <PortfolioBodytext
-              text="welcome, I am a software engineer from Colombia 🇨🇴. 
+          <div
+            class="flex flex-col md:flex-row-reverse md:justify-between lg:justify-around"
+          >
+            <PortfolioFotos imgName="mateo.jpg" altTag="Profile picture" />
+            <div class="mt-10 md:w-1/2">
+              <PortfolioTitle text="Mateo Arteaga" />
+              <PortfolioBodytext
+                class="md:mt-6"
+                text="Welcome, I am a software engineer from Colombia 🇨🇴. 
             I am passionate about learning new technologies, listening to music, watching movies, hanging out and pets."
+              />
+            </div>
+          </div>
+          <div class="flex flex-row w-full justify-center">
+            <PortfolioButton
+              class="self-center bg-secondary-green-solid transition ease-in-out duration-300 hover:bg-secondary-green-dark"
+              content="Resume"
             />
           </div>
-          <PortfolioButton
-            class="self-center bg-secondary-green-solid"
-            content="Resume"
-          />
         </div>
       </div>
       <!-- Gallery -->
@@ -52,14 +58,16 @@
         class="relative w-full flex flex-col bg-indigo-600 justify-center items-cente px-10"
       >
         <!-- Skills set -->
-        <div class="flex flex-col justify-center my-8 items-center">
-          <PortfolioMainText text="Skills" class="text-white" />
-          <div class="w-full flex flex-wrap space-y-8">
-            <div class="w-full">
+        <div class="flex flex-col justify-center my-8 items-center px-0">
+          <PortfolioMainText text="Skills" class="text-base-white" />
+          <div
+            class="w-full flex flex-wrap space-y-8 justify-around items-start"
+          >
+            <div class="w-96">
               <SkillsType skillType="Languages" />
               <SkillsTable :skills="languages" />
             </div>
-            <div class="w-full">
+            <div class="w-96">
               <SkillsType skillType="Frameworks" />
               <SkillsTable :skills="frameworks" />
             </div>
@@ -86,7 +94,6 @@
 </template>
 
 <script setup>
-import NavBar from "../components/nav/NavBar.vue";
 import CircleBlueToGreen from "../components/CircleBlueToGreen.vue";
 import CircleGreenToPink from "../components/CircleGreenToPink.vue";
 import CirclePinkToBlue from "../components/CirclePinkToBlue.vue";

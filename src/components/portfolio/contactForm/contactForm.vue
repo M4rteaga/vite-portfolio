@@ -18,7 +18,7 @@
               name="name"
               autocomplete="text"
               required
-              class="text-sm text-base-black w-full rounded-lg border border-gray-500 px-3 py-1 shadow-sm focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
+              class="text-sm text-base-lightBlack w-full rounded-lg border border-gray-500 px-3 py-1 shadow-sm focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
             />
           </div>
         </li>
@@ -35,7 +35,7 @@
               name="email"
               autocomplete="email"
               required
-              class="text-sm text-base-black w-full rounded-lg border border-gray-500 px-3 py-1 shadow-sm focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
+              class="text-sm text-base-lightBlack w-full rounded-lg border border-gray-500 px-3 py-1 shadow-sm focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
             />
           </div>
         </li>
@@ -52,13 +52,13 @@
               name="message"
               autocomplete="text"
               required
-              class="text-sm text-base-black w-full h-36 rounded-lg border border-gray-500 px-3 py-1 shadow-sm focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
+              class="text-sm text-base-lightBlack w-full h-36 rounded-lg border border-gray-500 px-3 py-1 shadow-sm focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
             />
           </div>
         </li>
       </ul>
       <PortfolioButton
-        class="self-center bg-secondary-pink-solid w-34"
+        class="self-center bg-secondary-pink-solid w-34 transition ease-in-out duration-300 hover:bg-secondary-pink-dark"
         content="Send"
         arrowDirection="transform -rotate-90"
       />

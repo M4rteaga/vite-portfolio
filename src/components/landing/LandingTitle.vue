@@ -1,6 +1,6 @@
 <template>
   <h1
-    class="duration-300 ease-in-out transform font-bold text-3xl text-center md:text-4xl lg:text-5xl xl:text-6xl"
+    class="duration-300 ease-in-out transform font-bold text-3xl text-center text-base-black md:text-4xl lg:text-5xl xl:text-6xl"
   >
     Building
     <span

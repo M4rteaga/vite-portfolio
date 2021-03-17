@@ -20,11 +20,13 @@ module.exports = {
             solid: "#03CEA4",
             opacity: "rgba(3, 206, 164, 0.16)",
             medium: "rgba(3, 206, 164, 0.50)",
+            dark: "#03B591",
           },
           pink: {
             solid: "#FF1B6B",
             opacity: "rgba(255, 27, 107, 0.16)",
             medium: "rgba(255, 27, 107, 0.50)",
+            dark: "#E0004F",
           },
         },
         base: {
@@ -32,6 +34,7 @@ module.exports = {
           white: "#FFFFFF",
           notThatWhite: "#FaFaFa",
           grey: "#F8F8F8",
+          lightBlack: "#373737",
         },
         glass: {
           whiteBl: "rgba(255, 255, 255, 0.1)",
