@@ -75,7 +75,6 @@
         <div
           @click="isOpen = false"
           class="absolute -inset-0 bg-black opacity-40"
-          tabindex="0"
         ></div>
       </div>
     </transition>
