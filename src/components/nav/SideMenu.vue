@@ -148,10 +148,8 @@ export default {
     isOpen: {
       immediate: true,
       handler(isOpen) {
-        if (process.client) {
-          if (isOpen) document.body.style.setProperty("overflow", "hidden");
-          else document.body.style.removeProperty("overflow");
-        }
+        if (isOpen) document.body.style.setProperty("overflow", "hidden");
+        else document.body.style.removeProperty("overflow");
       },
     },
   },
