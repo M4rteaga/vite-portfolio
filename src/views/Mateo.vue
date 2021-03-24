@@ -50,19 +50,34 @@
 				<div class="my-8 flex flex-col items-center justify-center w-full">
 					<PortfolioMainText text="Gallery" />
 					<div class="mt-4 mb-8 flex relative flex-row w-full justify-around">
-						<PortfolioGalleryFotos
-							imgName="Portfolio.webp"
-							class="hidden lg:block"
-							backColor="bg-primary-solid"
-						/>
-						<PortfolioGalleryFotos
-							imgName="Hidia.webp"
-							backColor="bg-secondary-green-solid"
-						/>
-						<PortfolioGalleryFotos
-							imgName="GraceHooper.webp"
-							class="hidden lg:block"
-						/>
+						<div class="hidden lg:flex flex-row justify-around w-full">
+							<PortfolioGalleryFotos
+								imgName="Portfolio.webp"
+								class=""
+								backColor="bg-primary-solid"
+							/>
+							<PortfolioGalleryFotos
+								imgName="Hidia.webp"
+								backColor="bg-secondary-green-solid"
+							/>
+							<PortfolioGalleryFotos imgName="GraceHooper.webp" class="" />
+						</div>
+						<!-- //Animation -->
+						<div class="lg:hidden">
+							<button
+								class="mb-4 bg-primary-solid px-3 py-2 text-white rounded-lg hover:bg-blue-600"
+								@click="printStatus"
+							>
+								toggle animation
+							</button>
+							<transition name="slide-fade">
+								<PortfolioGalleryFotos
+									v-show="animationStatus.status"
+									imgName="Portfolio.webp"
+									backColor="bg-primary-solid"
+								/>
+							</transition>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -109,11 +124,10 @@
 	</div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 	import CircleBlueToGreen from '../components/CircleBlueToGreen.vue';
 	import CircleGreenToPink from '../components/CircleGreenToPink.vue';
 	import CirclePinkToBlue from '../components/CirclePinkToBlue.vue';
-
 	import ContactForm from '../components/portfolio/contactForm.vue';
 	import SideMenu from '../components/nav/SideMenu.vue';
 	import UpButton from '../components/UpButton.vue';
@@ -128,51 +142,34 @@
 	import SkillsType from '../components/portfolio/Skill/SkillType.vue';
 	import DownloadButton from '../components/portfolio/aboutMe/DownloadButton.vue';
 
-	const address = {
-		linkedin: 'https://www.linkedin.com/in/mateo-arteaga-675a381a2/',
-		dribble: 'https://dribbble.com/M4rteaga',
-		github: 'https://github.com/M4rteaga/vite-portfolio',
+	import { languages, frameworks, address, imgs } from '../MateoData';
+	import { reactive } from 'vue';
+
+	const animationStatus = reactive({ status: false });
+
+	const printStatus = () => {
+		animationStatus.status = !animationStatus.status;
 	};
-
-	const languages = [
-		{
-			name: 'HTML',
-			level: 'w-3/4',
-		},
-		{
-			name: 'CSS',
-			level: 'w-1/2',
-		},
-		{
-			name: 'JavaScript',
-			level: 'w-2/3',
-		},
-		{
-			name: 'Typescript',
-			level: 'w-1/5',
-		},
-		{
-			name: 'Go',
-			level: 'w-1/5',
-		},
-	];
-
-	const frameworks = [
-		{
-			name: 'Tailwindcss',
-			level: 'w-3/4',
-		},
-		{
-			name: 'Vue',
-			level: 'w-2/5',
-		},
-		{
-			name: 'React',
-			level: 'w-1/6',
-		},
-		{
-			name: 'Express',
-			level: 'w-2/4',
-		},
-	];
 </script>
+
+<style scoped>
+	/* Enter and leave animations can use different */
+	/* durations and timing functions.              */
+	.slide-fade-enter-active {
+		transition: all 0.3s ease-out;
+	}
+
+	.slide-fade-leave-active {
+		transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+	}
+
+	.slide-fade-enter-from {
+		transform: translateX(-100vw);
+		opacity: 0;
+	}
+
+	.slide-fade-leave-to {
+		transform: translateX(100vw);
+		opacity: 0;
+	}
+</style>

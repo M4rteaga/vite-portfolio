@@ -46,13 +46,9 @@
 <script setup lang="ts">
 	import { defineProps } from 'vue';
 
-	interface Address {
-		linkedin?: string;
-		dribble?: string;
-		github?: string;
-	}
-
 	defineProps({
-		Address: Object,
+		Address: {
+			type: Object,
+		},
 	});
 </script>
