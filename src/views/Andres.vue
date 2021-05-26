@@ -267,7 +267,7 @@
 	];
 
 	//consumo la api
-	axios.get(`http://localhost/api/user/posts/${user}`).then((res) => {
+	axios.get(`http://localhost:8000/api/user/posts/${user}`).then((res) => {
 		console.log(res);
 		response.value = res.data;
 	});
