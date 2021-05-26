@@ -189,7 +189,7 @@
 			<div class="flex flex-row my-5 justify-center items-center">
 				<h3 class="text-center align-middle">{{ user }}</h3>
 				<a
-					href="http://127.0.0.1:8000/"
+					href="http://127.0.0.1:8000/storage/"
 					class="bg-blue-700 text-white py-2 px-3 ml-4 rounded-xl"
 				>
 					Follow
@@ -198,7 +198,7 @@
 
 			<div class="flex flex-row mx-5 flex-wrap space-y-4 space-x-6">
 				<ul v-for="(res, index) in response[0]">
-					<div class="flex flex-row justify-center items-center">
+					<div class="flex flex-col justify-center items-center">
 						<img
 							class="w-68 h-52 rounded-xl"
 							:src="'http://127.0.0.1:8000/' + res.image"
