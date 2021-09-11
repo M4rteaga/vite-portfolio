@@ -1,12 +1,31 @@
 <template>
 	<nav
-		class="flex w-full items-center content-center justify-between px-4 z-10 bg-base-black h-12 sm:px-8 lg:px-12"
+		class="
+			flex
+			w-full
+			items-center
+			content-center
+			justify-between
+			px-4
+			z-10
+			bg-base-black
+			h-12
+			sm:px-8
+			lg:px-12
+		"
 	>
 		<router-link to="/">
 			<h3
-				class="font-normal text-white text-base transition ease-in-out duration-200 hover:text-gray-300"
+				class="
+					font-normal
+					text-white text-base
+					transition
+					ease-in-out
+					duration-200
+					hover:text-gray-300
+				"
 			>
-				M&A Portfolio
+				M4rteaga
 			</h3>
 		</router-link>
 		<div v-if="menu">
@@ -38,7 +57,14 @@
 			</div>
 			<div class="md:hidden flex items-center">
 				<button
-					class="mr-2 rounded-lg focus:outline-none focus:border-primary-solid focus:ring-1 focus:ring-primary-solid"
+					class="
+						mr-2
+						rounded-lg
+						focus:outline-none
+						focus:border-primary-solid
+						focus:ring-1
+						focus:ring-primary-solid
+					"
 					aria-label="Open Menu"
 					@click="drawer"
 				>
@@ -79,46 +105,116 @@
 			</div>
 		</transition>
 		<aside
-			class="transform top-0 right-0 w-1/2 bg-base-white fixed h-1/3 overflow-auto ease-in-out transition-all duration-300 z-200 rounded-l-2xl rounded-b-2xl"
+			class="
+				transform
+				top-0
+				right-0
+				w-1/2
+				bg-base-white
+				fixed
+				h-1/3
+				overflow-auto
+				ease-in-out
+				transition-all
+				duration-300
+				z-200
+				rounded-l-2xl rounded-b-2xl
+			"
 			:class="isOpen ? 'translate-x-0' : 'translate-x-full'"
 		>
 			<div class="mt-6 mx-6 text-base text-base-black flex flex-col space-y-4">
 				<a
 					href="#aboutMe"
-					class="px-2 group rounded-lg transition ease-in-out duration-300 hover:bg-base-black"
+					class="
+						px-2
+						group
+						rounded-lg
+						transition
+						ease-in-out
+						duration-300
+						hover:bg-base-black
+					"
 				>
 					<h3
-						class="text-base-lightBlack transition ease-in duration-300 group-hover:text-white"
+						class="
+							text-base-lightBlack
+							transition
+							ease-in
+							duration-300
+							group-hover:text-white
+						"
 					>
 						About me
 					</h3>
 				</a>
 				<a
 					href="#gallery"
-					class="px-2 group rounded-lg transition ease-in duration-300 hover:bg-base-black"
+					class="
+						px-2
+						group
+						rounded-lg
+						transition
+						ease-in
+						duration-300
+						hover:bg-base-black
+					"
 				>
 					<h3
-						class="text-base-lightBlack transition ease-in duration-300 group-hover:text-white"
+						class="
+							text-base-lightBlack
+							transition
+							ease-in
+							duration-300
+							group-hover:text-white
+						"
 					>
 						Gallery
 					</h3>
 				</a>
 				<a
 					href="#skill"
-					class="px-2 group rounded-lg transition ease-in duration-300 hover:bg-base-black"
+					class="
+						px-2
+						group
+						rounded-lg
+						transition
+						ease-in
+						duration-300
+						hover:bg-base-black
+					"
 				>
 					<h3
-						class="text-base-lightBlack transition ease-in duration-300 group-hover:text-white"
+						class="
+							text-base-lightBlack
+							transition
+							ease-in
+							duration-300
+							group-hover:text-white
+						"
 					>
 						Skill
 					</h3>
 				</a>
 				<a
 					href="#contact"
-					class="px-2 group rounded-lg transition ease-in-out duration-400 hover:bg-base-black"
+					class="
+						px-2
+						group
+						rounded-lg
+						transition
+						ease-in-out
+						duration-400
+						hover:bg-base-black
+					"
 				>
 					<h3
-						class="text-base-lightBlack transition ease-in-out duration-400 group-hover:text-white"
+						class="
+							text-base-lightBlack
+							transition
+							ease-in-out
+							duration-400
+							group-hover:text-white
+						"
 					>
 						Contact
 					</h3>

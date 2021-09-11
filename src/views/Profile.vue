@@ -5,11 +5,23 @@
 			<!-- About me -->
 			<div
 				id="aboutMe"
-				class="w-full flex flex-col items-center mt-15 px-10 max-w-screen-2xl group"
+				class="
+					w-full
+					flex flex-col
+					items-center
+					mt-15
+					px-10
+					max-w-screen-2xl
+					group
+				"
 			>
 				<div class="flex flex-col">
 					<div
-						class="flex flex-col md:flex-row-reverse md:justify-between lg:justify-around"
+						class="
+							flex flex-col
+							md:flex-row-reverse md:justify-between
+							lg:justify-around
+						"
 					>
 						<PortfolioFotos imgName="mateo.webp" altTag="Profile picture" />
 						<div class="mt-10 md:w-1/2">
@@ -23,7 +35,14 @@
 					</div>
 					<div class="flex flex-row w-full justify-center">
 						<DownloadButton
-							class="self-center bg-secondary-green-solid transition ease-in-out duration-300 hover:bg-secondary-green-dark"
+							class="
+								self-center
+								bg-secondary-green-solid
+								transition
+								ease-in-out
+								duration-300
+								hover:bg-secondary-green-dark
+							"
 							content="Resume"
 						/>
 					</div>
@@ -36,15 +55,39 @@
 				class="relative w-full flex bg-base-grey mt-16 justify-center"
 			>
 				<div
-					class="absolute flex w-46 h-46 z-20 overflow-hidden transform rotate-180 right-0"
+					class="
+						absolute
+						flex
+						w-46
+						h-46
+						z-20
+						overflow-hidden
+						transform
+						rotate-180
+						right-0
+					"
 				>
 					<CircleGreenToPink
-						class="w-46 h-46 backdrop-blur transform translate-y-23 -translate-x-12"
+						class="
+							w-46
+							h-46
+							backdrop-blur
+							transform
+							translate-y-23
+							-translate-x-12
+						"
 					/>
 				</div>
 				<div class="absolute flex w-18 h-18 overflow-hidden bottom-0 left-0">
 					<CircleBlueToGreen
-						class="w-18 h-18 backdrop-blur transform -translate-x-1/2 translate-y-1/2"
+						class="
+							w-18
+							h-18
+							backdrop-blur
+							transform
+							-translate-x-1/2
+							translate-y-1/2
+						"
 					/>
 				</div>
 				<div class="my-8 flex flex-col items-center justify-center w-full">
@@ -63,27 +106,20 @@
 							<PortfolioGalleryFotos imgName="GraceHooper.webp" class="" />
 						</div>
 						<!-- //Animation -->
-						<div class="lg:hidden">
-							<button
-								class="mb-4 bg-primary-solid px-3 py-2 text-white rounded-lg hover:bg-blue-600"
-								@click="printStatus"
-							>
-								toggle animation
-							</button>
-							<transition name="slide-fade">
-								<PortfolioGalleryFotos
-									v-show="animationStatus.status"
-									imgName="Portfolio.webp"
-									backColor="bg-primary-solid"
-								/>
-							</transition>
-						</div>
 					</div>
 				</div>
 			</div>
 			<div
 				id="skill"
-				class="relative w-full flex flex-col bg-indigo-600 justify-center items-cente px-10"
+				class="
+					relative
+					w-full
+					flex flex-col
+					bg-indigo-600
+					justify-center
+					items-cente
+					px-10
+				"
 			>
 				<!-- Skills set -->
 				<div class="flex flex-col justify-center my-8 items-center px-0">
@@ -104,16 +140,46 @@
 			</div>
 			<div
 				id="contact"
-				class="w-full flex flex-col items-center justify-center mb-20 mt-10 px-10 lg:mt-15"
+				class="
+					w-full
+					flex flex-col
+					items-center
+					justify-center
+					mb-20
+					mt-10
+					px-10
+					lg:mt-15
+				"
 			>
 				<!-- Contact form -->
 				<div class="relative flex flex-col w-full sm:w-96">
 					<ContactForm class="transform mt-10" />
 					<CircleBlueToGreen
-						class="duration-300 ease-in-out transform w-20 h-20 top-2 -left-5 z-10 backdrop-blur lg:w-32 lg:h-32 lg:-top-2 lg:-left-10"
+						class="
+							duration-300
+							ease-in-out
+							transform
+							w-20
+							h-20
+							top-2
+							-left-5
+							z-10
+							backdrop-blur
+							lg:w-32 lg:h-32 lg:-top-2 lg:-left-10
+						"
 					/>
 					<CirclePinkToBlue
-						class="duration-300 ease-in-out transform w-14 h-14 -top-5 -left-9 z-0 lg:w-24 lg:h-24 lg:-top-10 lg:-left-20"
+						class="
+							duration-300
+							ease-in-out
+							transform
+							w-14
+							h-14
+							-top-5
+							-left-9
+							z-0
+							lg:w-24 lg:h-24 lg:-top-10 lg:-left-20
+						"
 					/>
 				</div>
 				<div>
@@ -142,7 +208,7 @@
 	import SkillsType from '../components/portfolio/Skill/SkillType.vue';
 	import DownloadButton from '../components/portfolio/aboutMe/DownloadButton.vue';
 
-	import { languages, frameworks, address, imgs } from '../MateoData';
+	import { languages, frameworks, address, imgs } from '../ProfileData';
 	import { reactive } from 'vue';
 
 	const animationStatus = reactive({ status: false });

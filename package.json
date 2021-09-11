@@ -1,6 +1,7 @@
 {
   "name": "vite-portfolio",
   "version": "0.0.0",
+  "author": ["M4rteaga", "AndresVelez"],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
