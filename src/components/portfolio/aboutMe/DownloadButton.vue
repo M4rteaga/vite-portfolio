@@ -1,7 +1,6 @@
 <template>
 	<!-- add the download keyword to the a tag and add the href of your resume -->
 	<a
-		href=""
 		class="
 			mt-8
 			group
