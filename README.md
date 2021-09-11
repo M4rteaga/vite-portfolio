@@ -3,7 +3,7 @@
 Portfolio template with landing page.
 It was written using [vite](https://vitejs.dev), [vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue), [vue-route](https://router.vuejs.org) and [windicss](https://github.com/windicss/vite-plugin-windicss).
 
-Deployd on Netlify [M&A Portfolio](https://m4portfoliotemplate.netlify.app/).
+Deployd on Netlify [Preview demo](https://m4portfoliotemplate.netlify.app/).
 
 ```yarn
 //install dependencies
