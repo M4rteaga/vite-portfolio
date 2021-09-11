@@ -209,13 +209,6 @@
 	import DownloadButton from '../components/portfolio/aboutMe/DownloadButton.vue';
 
 	import { languages, frameworks, address, imgs } from '../ProfileData';
-	import { reactive } from 'vue';
-
-	const animationStatus = reactive({ status: false });
-
-	const printStatus = () => {
-		animationStatus.status = !animationStatus.status;
-	};
 </script>
 
 <style scoped>
